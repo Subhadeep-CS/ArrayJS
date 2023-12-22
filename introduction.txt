@@ -1,0 +1,59 @@
+What is array ?
+
+If we follow the data structure or traditional array defination then we say that the
+array is the collection of contiguos memory location with homogeneous data element,that
+means we cannot modify the size of the array.
+
+But,in Javascript the defination of array is totally changed,the array is the collection
+of element.
+
+We can store everything in array,like string,object,number etc.There's no restriction,
+and the Javascript array is resizable.
+
+Characteristic of array:-
+
+1.Javascript array is resizable and can contain mix o different data type.
+
+2.In Javascript each element of array defines by a special number called index number.
+Javascript follow 0-based indexing.
+
+3.Javascript array copy operation creates a swallow copy,that means when you want to
+duplicate a array,the new array holds the reference of previous array.
+
+4.Array is mutable in nature.
+
+5.If we get accesed the >=length index then we get undefined.
+
+Reference type:-
+
+In Javascript array is object. means when it's created,it creat on heap memory,thus
+it's create on heap memory it's reference type.
+
+Before going to array method==>
+
+Before going to array method,we will discuss about what's mutating method and what's 
+immutating method?
+
+mutating method is those method,when we applying that method on a particular thing,then
+the orginal thing will be modified and new object is not created.
+
+For better clarity we take a string method called toUpperCase it's a immutating method,
+so when we apply that on a string,then new string will be created and if we consider
+array push method then it will push item end of the array,no new array created.
+
+
+Memory representation of array?
+
+Array created on the heap.
+
+var a=[1,2,3];
+
+array a created on the heap,now the a means [1,2,3] has a memory location,that will assign
+on the variable of a in the stack.That means reference will assign on the variable.
+
+suppose if I do var b=a; then js compiler won't create another array b,it's just assign
+the reference of a on b.
+
+That's all the basics facts of the array.
+
+Happy Coding.
