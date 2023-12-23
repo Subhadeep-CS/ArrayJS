@@ -1,0 +1,45 @@
+We already now that there are two types of method available in javascript.
+
+1.mutating method
+2.non-mutating method
+
+There are two type of method available for the array
+
+1. push()=> push is a mutating method,means push modify the orginal array. push method,
+push one or more element at the end of the array.
+
+var a=[1,2,3];
+a.push(4,5);
+
+2.pop()=>pop is a mutating method,means pop remove the last element from the array and
+return it.
+
+var a=[1,2,3];
+a.pop();
+
+3.shift()=>shift is a mutating method,remove the first element from the array and return
+it.
+
+var a=[1,2,3];
+a.shift();
+
+4.unshift()=>unshift is a mutating method,add one or more element from the first element
+of the array.
+
+var a=[1,2,3];
+a.unshift(0);
+
+What is the problem with mutating method?
+
+Mutating method modify the orginal array.
+
+suppose,
+
+var a=[1,2,3];
+
+var b=a;
+
+if I a.push(4);
+
+then b array will be modified,because it's a mutating method and also array is a object 
+and that's follow the reference type.
