@@ -43,3 +43,13 @@ if I a.push(4);
 
 then b array will be modified,because it's a mutating method and also array is a object 
 and that's follow the reference type.
+
+Now,how do we resolve that problem?
+
+There are three,four technique to resolve this problem.
+
+1. Using immutating method to resolve that problem.
+
+i. concat()=> concat is a imutating method of the Array object,means It does not modify
+the current array rather it creates a new array. concat() method use to concatinate
+one or more array.
