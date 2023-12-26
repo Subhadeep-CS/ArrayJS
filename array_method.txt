@@ -53,3 +53,11 @@ There are three,four technique to resolve this problem.
 i. concat()=> concat is a imutating method of the Array object,means It does not modify
 the current array rather it creates a new array. concat() method use to concatinate
 one or more array.
+
+By using concat method we can concat array.
+
+Syntax:-
+
+    array_name.concat(array1,.......,arrayn);
+
+We can put static value inside the concat.
