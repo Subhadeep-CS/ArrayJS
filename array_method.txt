@@ -40,3 +40,42 @@ var a=[10,20,30,40];
 a.pop();
 console.log(a); // we get [10,20,30]
 
+3.shift()=>
+
+It's also a mutating method of array that will remove the first element of array and return it.
+
+var a=[10,20,30,40];
+a.shift();
+console.log(a); //we get [20,30,40]
+
+4.unshift()=>
+
+It's also a mutating method that will add the one or more element at the begining of the array.
+
+var a=[10,20,30,40];
+a.unshift(50,60);
+console.log(a);
+
+5.concat()=>
+
+concat is a immutating method of array,that will not change or modify the current array but create a new array in each operation.concat method concating the one or more array into a single array and create that array.
+
+syntax:-
+
+var a=[10,20,40];
+a.concat([50,60]);
+console.log(a); //we get the orginal array beacuse it's a immutating method
+a=a.concat([50,60]);
+console.log(a); //now we get the updated array
+
+6.slice(start index,end index)
+
+slice is a immutating method of array,that will removes a portion of array and build a new array.Though it's a immutating method,it will not change or modify the main array.
+
+syntax:-
+
+var a=[10,20,30,40,50];
+
+7.indexof()
+
+8.
