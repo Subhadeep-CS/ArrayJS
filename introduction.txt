@@ -1,59 +1,57 @@
-What is array ?
+What is Array?
 
-If we follow the data structure or traditional array defination then we say that the
-array is the collection of contiguos memory location with homogeneous data element,that
-means we cannot modify the size of the array.
+In we look into DSA,then we can say that array is a collection of contiguous memory location with homogeneous data element.Once we created a array the array size does not change.
 
-But,in Javascript the defination of array is totally changed,the array is the collection
-of element.
-
-We can store everything in array,like string,object,number etc.There's no restriction,
-and the Javascript array is resizable.
+But in Javascript array defination quiet be change.In javascript array is collection of item means we can store everything inside array.
 
 Characteristic of array:-
 
-1.Javascript array is resizable and can contain mix o different data type.
+1.Javascript array is resizable that means if we create a array then we can resize it as per our requirement.
 
-2.In Javascript each element of array defines by a special number called index number.
-Javascript follow 0-based indexing.
+example:-
 
-3.Javascript array copy operation creates a swallow copy,that means when you want to
-duplicate a array,the new array holds the reference of previous array.
+var a=[10,20,30];
+a.push(40);
+console.log(a); // array size is changed
 
-4.Array is mutable in nature.
+2.Javascript array follows 0-based indexing means it's index start with 0 always.First index always in 0 and the last index always in length-1.
 
-5.If we get accesed the >=length index then we get undefined.
+3.Javascript array creates a swallow copy in copy operation.(swallow copy means,when we perfrom copy operation then javascript won't create a seperate copy of array,javascriptjust store the reference in it. )
 
-Reference type:-
+4.If we access the greater than or equal to length index,then we get undefined.
 
-In Javascript array is object. means when it's created,it creat on heap memory,thus
-it's create on heap memory it's reference type.
+5.There's no data-type restriction in javascript array.we can store multiple data type in same array.
 
-Before going to array method==>
+6.In javascript array is object.
 
-Before going to array method,we will discuss about what's mutating method and what's 
-immutating method?
+How to declare a array and initialize array?
 
-mutating method is those method,when we applying that method on a particular thing,then
-the orginal thing will be modified and new object is not created.
+var a=[10,20,30];
 
-For better clarity we take a string method called toUpperCase it's a immutating method,
-so when we apply that on a string,then new string will be created and if we consider
-array push method then it will push item end of the array,no new array created.
+var b=["String",10,20,"Pop",true];
 
+How get length of the array?
 
-Memory representation of array?
+We have a property called length inside built-in Array object.By using that we cand find out the length of the array.
 
-Array created on the heap.
+console.log(array_name.length);
 
-var a=[1,2,3];
+Array mutability:-
 
-array a created on the heap,now the a means [1,2,3] has a memory location,that will assign
-on the variable of a in the stack.That means reference will assign on the variable.
+In javascript array is mutable in nature,means once we created a array, then we can modify it by using some method and that will change the array.
 
-suppose if I do var b=a; then js compiler won't create another array b,it's just assign
-the reference of a on b.
+Array is object  in javascript:-
 
-That's all the basics facts of the array.
+An array is object in javascript.How can I check that array is object in javascript.
+Simply,if we do console.log(typeof(array_name)); then we get object in console.
 
-Happy Coding.
+But how to check a variable is array or not?
+
+For this,we have a method inside the built-in array object called isArray(),if we pass the array inside that method then if we get true that means the variable is array and if we get false that means the variable is not array.
+
+var a=[10,20,30,50];
+console.log(Array.isArray(a)); //we get true
+
+Swallow copy:-
+
+In array copy operation,javascript create a swallow copy of the array.
