@@ -1,0 +1,42 @@
+How many method available in Javascript?
+
+There are two type of method available in javascript.
+
+1.Mutating method:- Mutating method are those method that change the value of current data.
+
+example
+
+push() is a Mutating method of the array,that change the value of real array directly.
+var a=[10,20];
+a.push(30);
+console.log(a); // it will change the current array value
+
+2.Immutating method:- Immutating method are those method that cannot change the value of current data.It create a seperate copy of that.
+
+example
+
+toLowerCase() is a immutating method of string.
+var s="String";
+s.toLowerCase();
+console.log(s); //it will not change the current string value
+
+Built-in Method of Array:-
+
+Mutating method:-
+
+1.push()=>
+
+It's a mutating method of array.mutating method means it will modified orginal array.push method insert one or more item in the end of the array.
+
+var a=[10,20,30,40];
+a.push(50,60);
+console.log(a); // we get [10,20,30,40,50,60]
+
+2.pop()=>
+
+It's also a mutating method of array that will remove the last element of array at each operation and return it.
+
+var a=[10,20,30,40];
+a.pop();
+console.log(a); // we get [10,20,30]
+
