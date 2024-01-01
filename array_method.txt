@@ -92,6 +92,14 @@ if we
 
 7.sort()=>
 
-sort() method sort an array in alphabetical order.
+sort() method sort perfrom an ascending order sorting based on the unicode character,so use it carefully in sperate document(sort.txt and sort.js). I perfrom all kind of posible sorting in Javascript array.
+
+sort() is a mutating method means It will modify the orginal array.If we perfrom a.sort() then our orginal array will affect.
+
+Syntax=>
+
+array_name.sort();
+
+8.reverse()
 
 8.
