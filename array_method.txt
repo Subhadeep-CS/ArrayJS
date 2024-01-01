@@ -76,6 +76,22 @@ syntax:-
 
 var a=[10,20,30,40,50];
 
-7.indexof()
+if we apply 
+
+a.slice(2,5);
+
+it will start from index 2 and end in end-index-1 means it will remove index2,3,4 and create a array.
+
+a.slice(2)
+
+when we don't specify the end index then it will start from start index and end in last index.
+
+a.slice(5,2);
+
+if we 
+
+7.sort()=>
+
+sort() method sort an array in alphabetical order.
 
 8.
