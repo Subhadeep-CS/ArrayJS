@@ -29,3 +29,28 @@ var x=["Subho","Ram","Shyam","Yadu"];
 console.log(x);
 console.log(x.includes("subho")); //false
 console.log(x.includes("Subho")); //true
+
+//indexOf(searchItem,position)
+
+x.push("Shyam");
+x.push("Subho");
+
+console.log(x.indexOf("Subho"));
+console.log(x.indexOf("Subho",2));
+
+//lastindexOf(searchItem,position)
+
+console.log(x.lastIndexOf("Subho"));
+console.log(x.lastIndexOf("subho",4));
+
+//sort()
+
+console.log(a.sort());
+
+//reverse()
+
+console.log(a.reverse());
+
+//splice(start_index,how_many_item_deleted;new item)
+
+//join()
