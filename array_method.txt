@@ -86,10 +86,24 @@ a.slice(2)
 
 when we don't specify the end index then it will start from start index and end in last index.
 
-a.slice(5,2);
+a.slice(,2);
 
-if we 
+if we ommited the start index then it will start from 0-th index.
 
+a.slice(6,2)
+
+if we interchange the start index and end index then it will extracted nothing.
+
+a.slice(-3,-1)
+
+In array,if we provide -index then will denotes from the last
+
+[10,20,30,40]
+-4  -3 -2 -1
+
+Here we see how we can represent an array index by using -
+
+slice just extracted from -3 and -2 only.
 7.sort()=>
 
 sort() method sort perfrom an ascending order sorting based on the unicode character,so use it carefully in sperate document(sort.txt and sort.js). I perfrom all kind of posible sorting in Javascript array.
@@ -100,6 +114,70 @@ Syntax=>
 
 array_name.sort();
 
-8.reverse()
+8.reverse()=>
 
-8.
+reverse() is a mutating method of the array.It can reverse the element of the array and return the reference of the array.Means It's modify the current array.
+
+Syntax=>
+
+array-name.reverse();
+
+9.indexof()=>
+
+Then syntax of indexof is indexof("search item",start), it will return the index of the first ocurrance in the array,otherwise it's return -1.
+
+start is a optional for the indexof method,start defines that from where we start the search.If does not put anything,it's start the search from the first index.
+
+example=>
+
+var a=[10,20,30];
+a.indexof(10);
+it will return 0
+
+10.lastindexOf("search item",start)=>
+
+The lastindexOf function doing the same thing like indexof but it will start search from last index of the array.
+
+example=>
+var a=[10,20,30,10];
+a.lastindexOf(10);
+//we get 3
+
+11.includes(search_item)
+
+includes() method perfrom a case-sensitive search inside an array,if it find the item then it will return true otherwise it will return false.
+
+example=>
+var a=[10,20,30,40];
+a.includes(10); //it will return true
+
+12.join(separator)
+
+join method join the  array element in a single string by using a separator.
+
+a.join(" ");
+here's the separator is only a whitespace.
+
+12.splice()=>
+
+The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+
+splice is a mutating method that means it's modify the current array.
+
+Syntax:-
+
+splice(index,howmany delete,"new value");
+
+var a=["Sanju","Rehman","Aman","Rahul"];
+a.splice(2,0,"neha","karan");
+
+Here,splice method start from index 2 first It shift the index 2 item then here we specify 0 that means we did not delete any item and after that it will insert the all item that I put inside the splice.
+
+We can put index as a - that will count the index as reverse.
+
+How we can delete?
+
+var a=[10,20];
+a.splice(2,1);
+
+That's means it just delete index2 value only.
