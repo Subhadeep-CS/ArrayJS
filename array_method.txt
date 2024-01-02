@@ -158,7 +158,7 @@ join method join the  array element in a single string by using a separator.
 a.join(" ");
 here's the separator is only a whitespace.
 
-12.splice()=>
+13.splice()=>
 
 The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
 

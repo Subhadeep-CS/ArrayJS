@@ -4,8 +4,38 @@ We can iterate the array by using loop.
 
 1.Using while loop
 
+var counter=0;
+while(counter<array.length)
+{
+    console.log(arr[counter]);
+    counter++;
+}
+
 2.Using  for loop
+
+for(var i=0;i<array.length;i++)
+{
+    console.log(array[i]);
+}
 
 3.Using for of loop
 
+for(var value of array)
+{
+    console.log(value);
+}
+
+actually for of loop fetch the every value of index in every iteration and store it inside the value.
+
+So,we just print it in console.
+
 4.Using for in loop
+
+for(var index in array)
+{
+    console.log(array[index]);
+}
+
+in every iteration it fetch the index_value and store inside the index variable.
+
+in array.js file we show every example.
