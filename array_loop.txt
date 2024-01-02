@@ -1,0 +1,11 @@
+How to iterate an array?
+
+We can iterate the array by using loop.
+
+1.Using while loop
+
+2.Using  for loop
+
+3.Using for of loop
+
+4.Using for in loop

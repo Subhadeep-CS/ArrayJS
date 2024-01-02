@@ -1,0 +1,22 @@
+What is destructure?
+
+Destructure is a concept of javascript where wecan unpack the array element into variable or into newarray. 
+
+How we can destructure an array?
+
+var a=[10,20,30,40,50];
+var[myValue1,myValue2,myValue3,myValue4,myValue5]=a;
+
+Now we can get the value inside the variable
+
+myValue1------a[0]
+myValue2------a[1]
+myValue3------a[2]
+myValue4------a[3]
+myValue5------a[4]
+
+Here's the unpacking strategy
+
+Now we can skip the element while unpacking the data?
+
+

@@ -181,3 +181,5 @@ var a=[10,20];
 a.splice(2,1);
 
 That's means it just delete index2 value only.
+
+Inside the array_method.js we did hands on example.

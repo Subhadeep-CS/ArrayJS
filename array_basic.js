@@ -13,3 +13,6 @@ var d=c;
 c.push(30);
 console.log(c);
 console.log(d);
+
+var g=10;
+var h=g;

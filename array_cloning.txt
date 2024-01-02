@@ -1,0 +1,61 @@
+We know that an array is a reference type,so,if we want to clone the array by using assignment operator then only reference will store inside the variable.The major disadvantge is that the all variable points the same array in the memory,if we change something on array 1 then the change will reflect in array2.
+
+example
+
+var a=[10,20,30,40];
+var b=a;
+//if I want to push inside a then the change will reflect in array b also
+a.push(50);
+console.log(a);
+console.log(b);
+
+How we can resolve this problem?
+
+There are two,three technique to resolve that problem
+
+Technique=>
+
+Using non-mutating method to clone array
+
+1.By using concat() method.
+
+we know that concat() is a non-mutating method that will concat one or more array and generate a new array.
+
+var a=[10,20,30,40];
+var b=[].concat(a);
+
+if we concat a inside a new array then it will create a new array.
+
+2.By using splice() method
+
+splice() is also a non-mutating method that will remove or extract one portion of the array that I put in the start and end index.
+
+var a=[10,20,30,40]
+
+var b=a.slice(0); //slice(0) cut the all array item and construct a new array.
+
+Technique 2=>
+
+By using spread operator(...)
+
+Spread operator spread the all array element into a new array and with  existing element.
+
+var a=[10,20,30,40];
+var b=[...a];
+
+Here's all the tecnique to clone the array.
+
+How to add some extra item while cloning the array?
+
+concat()=> while concating two array then we can specify extra item as parameter and it will add in the array.
+
+var a=[10,20,30,40];
+var b=a.concat(20,30,40);
+
+Spread operator=>
+
+While spreading a array into another array we can add extra item also.
+var a =[10,20,30];
+var b=[...a,40,50];
+
+

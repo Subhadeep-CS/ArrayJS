@@ -1,0 +1,22 @@
+We all know that array is a object in Javascript.Now How javascript represent array inside the memory.Now we know that object is a reference type.
+
+In the case of primitive when we declare a variable for each decleration a sperate copy of variable creted on stack that means for each variable a seperate memory will allocate.
+
+for example
+
+var a=20;
+var b=a;
+
+Now a and b store in sperate places.If we see the window object then we can see that two seperate copy will created.
+
+But,for the object that memory representation does not occur in the same way.
+
+if we declare a array
+
+var a=[10,20,30];
+
+then the array will create inside the heap and every memory has an address that's called reference adderess and that reference adderess will store inside the variable inside the stack memory.
+
+Now,if we assign it to another variable then actually reference will share the variable,now new array object is created on the heap.
+
+That's the memory representation of an array.
