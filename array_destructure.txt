@@ -19,4 +19,24 @@ Here's the unpacking strategy
 
 Now we can skip the element while unpacking the data?
 
+We can skip element just skiping the index while destructure the array.
 
+if we do var[myValue1]=a;
+
+then It one destructure index1 element.
+
+Now how we can create array while destructure?
+
+for that we can use spread operator
+
+var[myValue1,...newArray]=a;
+
+Here index 1 value goes to the myValue1 and rest of the value is going to a array.
+
+Important Tips:
+
+Rest element must be last in destructure pattern,you can't do like that
+
+var[myValue1,...newArray,myValue2]=a;
+
+It will occur a error SyntaxError:Rest element must be the last element.
