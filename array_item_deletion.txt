@@ -1,0 +1,22 @@
+How to delete array element?
+
+You can delete array element by using delete keyword but there's a problen.
+
+var a=[10,20,30,40];
+delete(a[1]);
+
+But fact is that It will delete the value from the index but does not delete the index itself.
+
+If we print the array by using for loop then we can see it store undefined in it.
+
+But we need to delete with index not just value.
+
+For this,we use a method called splice method,by using splice method we can delete the array value with index.
+
+Now,we already now the syntax of splice method.
+
+splice(index,how_many_item_delete,new_item);
+
+a.splice(1,1);
+
+if we do that it will delete the item.So,best way to delete array element using splice method.
