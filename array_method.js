@@ -52,5 +52,10 @@ console.log(a.sort());
 console.log(a.reverse());
 
 //splice(start_index,how_many_item_deleted;new item)
+var z=[10,20,30,40];
+z.splice(2,2,10);
+console.log(z);
 
 //join()
+console.log(z.join("@"));
+
